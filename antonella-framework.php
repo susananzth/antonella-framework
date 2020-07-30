@@ -1,16 +1,16 @@
 <?php
 namespace WSTBFR;
 /*
-Plugin Name: Antonella Framework
+Plugin Name: Mi-Pugin
 Plugin URI:
 Description:Another plugin developed on Antonella Framework for WP
 Version: 1.6
-Author: Carlos Herrera
+Author: Susana Piñero Rodríguez
 Author URI:
 Framework: Antonella Framework for WP
 Framework URI: http://antonellaframework.com
 License: GPL2+
-Text Domain: Carlos Herrera
+Text Domain: Susana Piñero Rodríguez
 Domain Path: /languages
 */
 
