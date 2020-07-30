@@ -1,5 +1,5 @@
 <?php
-namespace WSTBFR;
+namespace SU;
 /*
 Plugin Name: Mi-Pugin
 Plugin URI:

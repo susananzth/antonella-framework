@@ -2,11 +2,11 @@
 /**
 * No modify this file !!!
 */
-namespace WSTBFR;
+namespace SU;
 
 /*
 * Class Start
-* @package WSTBFR\Start
+* @package SU\Start
 */
 class Start
 {

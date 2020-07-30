@@ -1,7 +1,7 @@
 <?php
-namespace WSTBFR\Admin;
+namespace SU\Admin;
 
-use WSTBFR\Config;
+use SU\Config;
 
 class Admin
 {

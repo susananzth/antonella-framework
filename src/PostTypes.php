@@ -1,6 +1,6 @@
 <?php
-namespace WSTBFR;
-use WSTBFR\Config;
+namespace SU;
+use SU\Config;
 class PostTypes
 {
   public static function index()

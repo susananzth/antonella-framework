@@ -1,6 +1,6 @@
 <?php
 
-namespace WSTBFR\Admin;
+namespace SU\Admin;
 use Jenssegers\Blade\Blade;
 
 class PageAdmin extends Admin
