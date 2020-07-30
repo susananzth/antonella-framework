@@ -1,7 +1,7 @@
 <?php
     namespace SU;
           
-    class SuShortCodeController.php
+    class SuShortCodeController
     {
     
         public function __construct()
