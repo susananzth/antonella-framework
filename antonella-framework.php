@@ -1,5 +1,5 @@
 <?php
-namespace WSTBFR;
+namespace PPT;
 /*
 Plugin Name: Antonella Framework
 Plugin URI:

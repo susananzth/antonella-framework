@@ -1,7 +1,7 @@
 <?php
-namespace WSTBFR\Admin;
+namespace PPT\Admin;
 
-use WSTBFR\Config;
+use PPT\Config;
 
 class Admin
 {

@@ -1,6 +1,6 @@
 <?php
-namespace WSTBFR;
-use WSTBFR\Config;
+namespace PPT;
+use PPT\Config;
 
 class Language
 {

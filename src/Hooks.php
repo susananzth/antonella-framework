@@ -2,8 +2,8 @@
 /**
 * No modify this file !!!
 */
-namespace WSTBFR;
-use WSTBFR\Config;
+namespace PPT;
+use PPT\Config;
 
 class Hooks
 {

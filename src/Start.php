@@ -2,11 +2,11 @@
 /**
 * No modify this file !!!
 */
-namespace WSTBFR;
+namespace PPT;
 
 /*
 * Class Start
-* @package WSTBFR\Start
+* @package PPT\Start
 */
 class Start
 {

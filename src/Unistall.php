@@ -1,5 +1,5 @@
 <?php
-namespace WSTBFR;
+namespace PPT;
 
 class Unistall
 {
