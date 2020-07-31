@@ -26,6 +26,7 @@
     ],
     "license": "MIT",
     "require": {
+        "nesbot/carbon": "^2.37"
     },
     "require-dev":{
         "vlucas/phpdotenv":"^3.5"
