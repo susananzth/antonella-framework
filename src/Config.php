@@ -57,7 +57,8 @@ class Config
     * @example [['example','SU\ExampleController::example_shortcode']]
     */
     public $shortcodes=[
-        ['hola','SU\SuShortCodeController::MiShortCode']
+        ['hola','SU\SuShortCodeController::MiShortCode'],
+        ['undia','SU\CarbonController::index']
     ];
     /**
     * Dashboard
