@@ -1,11 +1,11 @@
 <?php
 namespace PPT;
 /*
-Plugin Name: Antonella Framework
+Plugin Name: Plugin de post_type
 Plugin URI:
-Description:Another plugin developed on Antonella Framework for WP
+Description: Un plugin para agregar un post_type utilizando Antonella Framework.
 Version: 1.6
-Author: Carlos Herrera
+Author: Susana Piñero Rodríguez
 Author URI:
 Framework: Antonella Framework for WP
 Framework URI: http://antonellaframework.com
