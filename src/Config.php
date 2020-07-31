@@ -1,6 +1,6 @@
 <?php
 
-namespace WSTBFR;
+namespace PCF;
 
 class Config
 {
@@ -26,36 +26,36 @@ class Config
     /**
     * POST data process
     * get the post data and execute the function
-    * @example ['post_data'=>'WSTBFR::function']
+    * @example ['post_data'=>'PCF::function']
     */
     public $post=[];
     /**
     * GET data process
     * get the get data and execute the function
-    * @example ['get_data'=>'WSTBFR::function']
+    * @example ['get_data'=>'PCF::function']
     */
     public $get=[];
     /**
     * add_filter data functions
     * @input array
-    * @example ['body_class','WSTBFR::function',10,2]
-    * @example ['body_class',['WSTBFR','function'],10,2]
+    * @example ['body_class','PCF::function',10,2]
+    * @example ['body_class',['PCF','function'],10,2]
     */
     public $add_filter=[];
     /**
     * add_action data functions
     * @input array
-    * @example ['body_class','WSTBFR::function',10,2]
-    * @example ['body_class',['WSTBFR','function'],10,2]
+    * @example ['body_class','PCF::function',10,2]
+    * @example ['body_class',['PCF','function'],10,2]
     */
     public $add_action=[];
     /**
     * add custom shortcodes
     * @input array
-    * @example [['example','WSTBFR\ExampleController::example_shortcode']]
+    * @example [['example','PCF\ExampleController::example_shortcode']]
     */
     public $shortcodes=[
-        ['example','WSTBFR\ExampleController::example_shortcode']
+        ['example','PCF\ExampleController::example_shortcode']
     ];
     /**
     * Dashboard

@@ -1,6 +1,6 @@
 <?php
-namespace WSTBFR;
-use WSTBFR\Config;
+namespace PCF;
+use PCF\Config;
 
 class Shortcodes
 {

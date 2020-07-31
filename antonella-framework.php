@@ -1,5 +1,5 @@
 <?php
-namespace WSTBFR;
+namespace PCF;
 /*
 Plugin Name: Antonella Framework
 Plugin URI:
