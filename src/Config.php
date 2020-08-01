@@ -52,7 +52,9 @@ class Config
     * @example ['body_class','CAF::function',10,2]
     * @example ['body_class',['CAF','function'],10,2]
     */
-    public $add_action=[];
+    public $add_action=[
+      ['admin_head',__NAMESPACE__.'\AdminController::mostrar']
+    ];
     /**
     * add custom shortcodes
     * @input array
