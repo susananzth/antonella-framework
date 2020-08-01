@@ -34,7 +34,8 @@
     "autoload": {
         "psr-4": {"MCF7\\": "src/"},
         "files": [
-            "src/helpers.php"
+            "src/helpers.php",
+            "vendos/contact-form-7/wp-contact-form-7.php"
         ]
     },
     "extra": {
