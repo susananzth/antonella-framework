@@ -1,7 +1,7 @@
 <?php
-namespace WSTBFR\Admin;
+namespace CAF\Admin;
 
-use WSTBFR\Config;
+use CAF\Config;
 
 class Admin
 {

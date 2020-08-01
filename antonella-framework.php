@@ -1,5 +1,5 @@
 <?php
-namespace WSTBFR;
+namespace CAF;
 /*
 Plugin Name: Antonella Framework
 Plugin URI:

@@ -1,6 +1,6 @@
 <?php
-namespace WSTBFR;
-use WSTBFR\Config;
+namespace CAF;
+use CAF\Config;
 class PostTypes
 {
   public static function index()
