@@ -17,7 +17,7 @@
       	$cmb = new_cmb2_box( array(
       		'id'            => 'test_metabox',
       		'title'         => __( 'Test Metabox', 'cmb2' ),
-      		'object_types'  => array( 'page', ), // Post type
+      		'object_types'  => array( 'automovil', ), // Post type
       		'context'       => 'normal',
       		'priority'      => 'high',
       		'show_names'    => true, // Show field names on the left
