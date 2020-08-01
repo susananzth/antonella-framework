@@ -86,6 +86,13 @@ class Config
     * list capability -> https://wordpress.org/support/article/roles-and-capabilities/
     */
     public $plugin_menu=[
+      [
+        "path"      => ["page"],
+        "name"      => "Cambiar Fuente",
+        "function"  => __NAMESPACE__."\AdminController::index",
+        "icon"      => "antonella-icon.png",
+        "slug"      => "my-custom-page",
+      ]
     /*
         [
             "path"      => ["page"],
