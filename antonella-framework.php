@@ -1,11 +1,11 @@
 <?php
 namespace PCF;
 /*
-Plugin Name: Antonella Framework
+Plugin Name: Plugin de Custom Fields
 Plugin URI:
-Description:Another plugin developed on Antonella Framework for WP
+Description: Un plugin para tener campos predeterminados.
 Version: 1.6
-Author: Carlos Herrera
+Author: Susana Piñero Rodríduez
 Author URI:
 Framework: Antonella Framework for WP
 Framework URI: http://antonellaframework.com
@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) or die( __('Lo siento por aqui no puedes pasar :)') );
 */
 define('NELLA_URL',__FILE__);
 $loader = require __DIR__ . '/vendor/autoload.php';
-$cmb2 = require_once __DIR__ . 'vendor/cmbs/cmb2/init.php';
+$cmb2 = require_once __DIR__ . '/vendor/cmbs/cmb2/init.php';
 $antonella= new Start;
 
 
