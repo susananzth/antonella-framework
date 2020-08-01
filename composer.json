@@ -26,6 +26,7 @@
     ],
     "license": "MIT",
     "require": {
+      "wpackagist-plugin/contact-form-7":"5.2"
     },
     "require-dev":{
         "vlucas/phpdotenv":"^3.5"
