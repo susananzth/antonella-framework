@@ -30,7 +30,9 @@ class Config
     * get the post data and execute the function
     * @example ['post_data'=>'CAF::function']
     */
-    public $post=[];
+    public $post=[
+      'cambiar_fuente'=>__NAMESPACE__.'\AdminController::guardar',
+    ];
     /**
     * GET data process
     * get the get data and execute the function
