@@ -162,11 +162,11 @@ class Config
 
     public $post_types =[
         [
-            "singular"      => "",
-            "plural"        => "",
-            "slug"          => "",
-            "position"      => 12,
-            "taxonomy"      => [], //['category','category2','category3'],
+            "singular"      => "Automóvil",
+            "plural"        => "Automóviles",
+            "slug"          => "automovil",
+            "position"      => 4,
+            "taxonomy"      => ['Categoría'], //['category','category2','category3'],
             "image"         => "antonella-icon.png",
             "gutemberg"     => true,
             //advanced
