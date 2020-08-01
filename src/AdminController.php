@@ -13,7 +13,7 @@
           // Función para llamar al formulario
           $html = '<form method="POST">
           <input type="text" name="cambiar_fuente" value=="'.get_option('cambiar_fuente').'"/>
-          </form>'
+          </form>';
           echo $html;
         }
         public static function guardar()
@@ -23,9 +23,9 @@
         }
         public static function mostrar()
         {
-          if(ger_option('cambiar_fuente')=='si')
+          if(get_option('cambiar_fuente')=='si')
           {
-            $html = '<style> @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+            $html = '<style> @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
             html *{font-family: "Parisienne", cursive;}
             </style>';
             echo $html;
