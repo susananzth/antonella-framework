@@ -2,11 +2,11 @@
 /**
 * No modify this file !!!
 */
-namespace WSTBFR;
+namespace MCF7;
 
 /*
 * Class Start
-* @package WSTBFR\Start
+* @package MCF7\Start
 */
 class Start
 {

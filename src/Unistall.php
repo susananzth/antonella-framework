@@ -1,5 +1,5 @@
 <?php
-namespace WSTBFR;
+namespace MCF7;
 
 class Unistall
 {

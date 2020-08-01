@@ -1,7 +1,7 @@
 <?php 
-namespace WSTBFR\Admin;
+namespace MCF7\Admin;
 
-use WSTBFR\Config;
+use MCF7\Config;
 
 class Dashboard
 {

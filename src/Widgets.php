@@ -1,6 +1,6 @@
 <?php
-namespace WSTBFR;
-use WSTBFR\Config;
+namespace MCF7;
+use MCF7\Config;
 
 class Widgets
 {

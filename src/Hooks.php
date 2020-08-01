@@ -2,8 +2,8 @@
 /**
 * No modify this file !!!
 */
-namespace WSTBFR;
-use WSTBFR\Config;
+namespace MCF7;
+use MCF7\Config;
 
 class Hooks
 {
