@@ -1,11 +1,11 @@
 <?php
 namespace CAF;
 /*
-Plugin Name: Antonella Framework
+Plugin Name: Plugin de cambio de config Admin
 Plugin URI:
-Description:Another plugin developed on Antonella Framework for WP
+Description: Un pugin para cambiar la configuración del administrador de WordPress.
 Version: 1.6
-Author: Carlos Herrera
+Author: Susana Piñero Rodríguez
 Author URI:
 Framework: Antonella Framework for WP
 Framework URI: http://antonellaframework.com
