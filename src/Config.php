@@ -4,7 +4,7 @@ namespace CAF;
 
 class Config
 {
-   
+
     /*
     * Plugins option
     * storage in database the option value
@@ -12,7 +12,9 @@ class Config
     * @example ["example_data" => 'foo',]
     * @return void
     */
-    public $plugin_options=[];
+    public $plugin_options=[
+      'cambiar_fuente'=>'no',
+    ];
     /**
     * Language Option
     * define a unique word for translate call
@@ -94,7 +96,7 @@ class Config
             "capability"=> 'manage_options',
             "position"  => 5,
         ]
-        
+
             [
                 "path"      => ["page"],
                 "name"      => "My Custom Page",
@@ -175,7 +177,7 @@ class Config
             */
         ],
     ];
-    
+
     /**
      * Taxonomies
      * for make taxonomies
@@ -197,9 +199,9 @@ class Config
             "rewrite"       =>[],
             "capabilities"  =>[]
             */
-        ] 
+        ]
     ];
-    
+
     /**
      * Widget
      * For register a Widget please:
@@ -208,5 +210,5 @@ class Config
      * @example public $widget = [__NAMESPACE__.'\YouClassWidget']  //only the class
      */
     public $widgets=[];
-    
+
 }
