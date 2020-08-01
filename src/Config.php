@@ -4,7 +4,7 @@ namespace MCF7;
 
 class Config
 {
-   
+
     /*
     * Plugins option
     * storage in database the option value
@@ -94,7 +94,7 @@ class Config
             "capability"=> 'manage_options',
             "position"  => 5,
         ]
-        
+
             [
                 "path"      => ["page"],
                 "name"      => "My Custom Page",
@@ -160,11 +160,11 @@ class Config
 
     public $post_types =[
         [
-            "singular"      => "",
-            "plural"        => "",
-            "slug"          => "",
-            "position"      => 12,
-            "taxonomy"      => [], //['category','category2','category3'],
+            "singular"      => "Contacto",
+            "plural"        => "Contactos",
+            "slug"          => "contacto",
+            "position"      => 4,
+            "taxonomy"      => ['categoría'], //['category','category2','category3'],
             "image"         => "antonella-icon.png",
             "gutemberg"     => true,
             //advanced
@@ -175,7 +175,7 @@ class Config
             */
         ],
     ];
-    
+
     /**
      * Taxonomies
      * for make taxonomies
@@ -197,9 +197,9 @@ class Config
             "rewrite"       =>[],
             "capabilities"  =>[]
             */
-        ] 
+        ]
     ];
-    
+
     /**
      * Widget
      * For register a Widget please:
@@ -208,5 +208,5 @@ class Config
      * @example public $widget = [__NAMESPACE__.'\YouClassWidget']  //only the class
      */
     public $widgets=[];
-    
+
 }
