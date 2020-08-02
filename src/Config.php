@@ -48,7 +48,9 @@ class Config
     * @example ['body_class','MCF7::function',10,2]
     * @example ['body_class',['MCF7','function'],10,2]
     */
-    public $add_action=[];
+    public $add_action=[
+      ['wpcf7_before_send_mail',__NAMESPACE__.'\ContactoController::guardar'],
+    ];
     /**
     * add custom shortcodes
     * @input array
