@@ -25,4 +25,29 @@
           // Insert the post into the database
           wp_insert_post($args);
         }
+        function TablaColumnas($defaults)
+        {
+          unset($defaults['category']);
+          unset($defaults['date']);
+
+          //Agregando nuestras columnas
+          $defaults['nombre']   = "Nombre";
+          $defaults['email']    = "Correo";
+          $defaults['date']     = "Fecha";
+        }
+        function TablaColumnasContenido($column_name, $post_id)
+        {
+          if($column_name == 'nombre')
+          {
+            echo get_post_meta($post_id, 'nombre', true);
+          }
+          if($column_name == 'email')
+          {
+            echo get_post_meta($post_id, 'email', true);
+          }
+          if($column_name == 'date')
+          {
+            echo get_post_meta($post_id, 'date', true);
+          }
+        }
     }
