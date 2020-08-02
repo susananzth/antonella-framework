@@ -1,7 +1,12 @@
 <?php
 
+<<<<<<< HEAD
 namespace SU;
 use SU\Config;
+=======
+namespace PPT;
+use PPT\Config;
+>>>>>>> Cambiando namespace con php antonella namespace PPT
 class Install
 {
     /*
@@ -54,7 +59,11 @@ class Install
         {
              if($wpdb->get_var("SHOW TABLES LIKE '{$sql['table']}'") != $sql['table'])
              {
+<<<<<<< HEAD
                 $query="CREATE TABLE IF NOT EXISTS {$sql['table']} ( {$sql['query']} ) ENGINE=InnoDB DEFAULT SUARSET=latin1 AUTO_INCREMENT=1 ;";
+=======
+                $query="CREATE TABLE IF NOT EXISTS {$sql['table']} ( {$sql['query']} ) ENGINE=InnoDB DEFAULT PPTARSET=latin1 AUTO_INCREMENT=1 ;";
+>>>>>>> Cambiando namespace con php antonella namespace PPT
                 $wpdb->query($sql['query']);
              }
         }

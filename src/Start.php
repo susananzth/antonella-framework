@@ -2,11 +2,19 @@
 /**
 * No modify this file !!!
 */
+<<<<<<< HEAD
 namespace SU;
 
 /*
 * Class Start
 * @package SU\Start
+=======
+namespace PPT;
+
+/*
+* Class Start
+* @package PPT\Start
+>>>>>>> Cambiando namespace con php antonella namespace PPT
 */
 class Start
 {

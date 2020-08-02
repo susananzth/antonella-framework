@@ -1,13 +1,13 @@
 <?php
-namespace SU;
-use SU\Config;
+namespace PPT;
+use PPT\Config;
 
 class Widgets
 {
 
     public function __construct()
     {
-        
+
     }
 
     public static function index()

@@ -1,6 +1,11 @@
 <?php
+<<<<<<< HEAD
 namespace SU;
 use SU\Config;
+=======
+namespace PPT;
+use PPT\Config;
+>>>>>>> Cambiando namespace con php antonella namespace PPT
 class PostTypes
 {
   public static function index()

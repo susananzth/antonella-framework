@@ -1,7 +1,13 @@
 <?php
+<<<<<<< HEAD
 namespace SU\Admin;
 
 use SU\Config;
+=======
+namespace PPT\Admin;
+
+use PPT\Config;
+>>>>>>> Cambiando namespace con php antonella namespace PPT
 
 class Admin
 {

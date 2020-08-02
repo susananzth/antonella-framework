@@ -1,6 +1,6 @@
 <?php
 
-namespace SU;
+namespace PPT;
 
 class Config
 {
@@ -26,35 +26,37 @@ class Config
     /**
     * POST data process
     * get the post data and execute the function
-    * @example ['post_data'=>'SU::function']
+    * @example ['post_data'=>'PPT::function']
     */
     public $post=[];
     /**
     * GET data process
     * get the get data and execute the function
-    * @example ['get_data'=>'SU::function']
+    * @example ['get_data'=>'PPT::function']
     */
     public $get=[];
     /**
     * add_filter data functions
     * @input array
-    * @example ['body_class','SU::function',10,2]
-    * @example ['body_class',['SU','function'],10,2]
+    * @example ['body_class','PPT::function',10,2]
+    * @example ['body_class',['PPT','function'],10,2]
     */
     public $add_filter=[];
     /**
     * add_action data functions
     * @input array
-    * @example ['body_class','SU::function',10,2]
-    * @example ['body_class',['SU','function'],10,2]
+    * @example ['body_class','PPT::function',10,2]
+    * @example ['body_class',['PPT','function'],10,2]
     */
     public $add_action=[];
     /**
     * add custom shortcodes
     * @input array
-    * @example [['example','SU\ExampleController::example_shortcode']]
+    * @example [['example','PPT\ExampleController::example_shortcode']]
     */
-    public $shortcodes=[];
+    public $shortcodes=[
+        ['example','PPT\ExampleController::example_shortcode']
+    ];
     /**
     * Dashboard
 

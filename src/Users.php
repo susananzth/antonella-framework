@@ -1,5 +1,5 @@
 <?php
-namespace SU;
+namespace PPT;
 
 class Users
 {

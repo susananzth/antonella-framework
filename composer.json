@@ -32,7 +32,11 @@
         "vlucas/phpdotenv":"^3.5"
     },
     "autoload": {
+<<<<<<< HEAD
         "psr-4": {"SU\\": "src/"},
+=======
+        "psr-4": {"PPT\\": "src/"},
+>>>>>>> Cambiando namespace con php antonella namespace PPT
         "files": [
             "src/helpers.php"
         ]
