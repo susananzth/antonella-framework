@@ -4,7 +4,7 @@ namespace SU;
 
 class Config
 {
-   
+
     /*
     * Plugins option
     * storage in database the option value
@@ -48,17 +48,13 @@ class Config
     * @example ['body_class','SU::function',10,2]
     * @example ['body_class',['SU','function'],10,2]
     */
-    public $add_action=[
-        ['publish_post', ['SU\MailController', 'wpdocs_email_friends'], 10, 1]
-    ];
+    public $add_action=[];
     /**
     * add custom shortcodes
     * @input array
     * @example [['example','SU\ExampleController::example_shortcode']]
     */
-    public $shortcodes=[
-        ['undia','SU\CarbonController::index']
-    ];
+    public $shortcodes=[];
     /**
     * Dashboard
 
@@ -96,7 +92,7 @@ class Config
             "capability"=> 'manage_options',
             "position"  => 5,
         ]
-        
+
             [
                 "path"      => ["page"],
                 "name"      => "My Custom Page",
@@ -177,7 +173,7 @@ class Config
             */
         ],
     ];
-    
+
     /**
      * Taxonomies
      * for make taxonomies
@@ -199,9 +195,9 @@ class Config
             "rewrite"       =>[],
             "capabilities"  =>[]
             */
-        ] 
+        ]
     ];
-    
+
     /**
      * Widget
      * For register a Widget please:
@@ -210,5 +206,5 @@ class Config
      * @example public $widget = [__NAMESPACE__.'\YouClassWidget']  //only the class
      */
     public $widgets=[];
-    
+
 }
