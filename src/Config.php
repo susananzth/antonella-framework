@@ -1,6 +1,6 @@
 <?php
 
-namespace CAF;
+namespace MCF7;
 
 class Config
 {
@@ -28,7 +28,7 @@ class Config
     /**
     * POST data process
     * get the post data and execute the function
-    * @example ['post_data'=>'CAF::function']
+    * @example ['post_data'=>'MCF7::function']
     */
     public $post=[
       'cambiar_fuente'=>__NAMESPACE__.'\AdminController::guardar',
@@ -36,32 +36,32 @@ class Config
     /**
     * GET data process
     * get the get data and execute the function
-    * @example ['get_data'=>'CAF::function']
+    * @example ['get_data'=>'MCF7::function']
     */
     public $get=[];
     /**
     * add_filter data functions
     * @input array
-    * @example ['body_class','CAF::function',10,2]
-    * @example ['body_class',['CAF','function'],10,2]
+    * @example ['body_class','MCF7::function',10,2]
+    * @example ['body_class',['MCF7','function'],10,2]
     */
     public $add_filter=[];
     /**
     * add_action data functions
     * @input array
-    * @example ['body_class','CAF::function',10,2]
-    * @example ['body_class',['CAF','function'],10,2]
+    * @example ['body_class','MCF7::function',10,2]
+    * @example ['body_class',['MCF7','function'],10,2]
     */
     public $add_action=[
-      ['admin_head',__NAMESPACE__.'\AdminController::mostrar']
+      ['wpcf7_before_send_mail',__NAMESPACE__.'\ContactController::guardar'],
     ];
     /**
     * add custom shortcodes
     * @input array
-    * @example [['example','CAF\ExampleController::example_shortcode']]
+    * @example [['example','MCF7\ExampleController::example_shortcode']]
     */
     public $shortcodes=[
-        ['example','CAF\ExampleController::example_shortcode']
+        ['example','MCF7\ExampleController::example_shortcode']
     ];
     /**
     * Dashboard
@@ -173,11 +173,11 @@ class Config
 
     public $post_types =[
         [
-            "singular"      => "Automóvil",
-            "plural"        => "Automóviles",
-            "slug"          => "automovil",
+            "singular"      => "Contacto",
+            "plural"        => "Contactos",
+            "slug"          => "contacto",
             "position"      => 4,
-            "taxonomy"      => ['Categoría'], //['category','category2','category3'],
+            "taxonomy"      => ['categoría'], //['category','category2','category3'],
             "image"         => "antonella-icon.png",
             "gutemberg"     => true,
             //advanced

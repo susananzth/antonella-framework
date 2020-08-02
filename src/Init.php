@@ -1,5 +1,5 @@
 <?php
-namespace CAF;
+namespace MCF7;
 
 class Init
 {

@@ -1,7 +1,7 @@
 <?php 
-namespace CAF\Admin;
+namespace MCF7\Admin;
 
-use CAF\Config;
+use MCF7\Config;
 
 class Dashboard
 {

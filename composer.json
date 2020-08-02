@@ -26,15 +26,16 @@
     ],
     "license": "MIT",
     "require": {
-      "cmb2/cmb2": "dev-master"
+      "wpackagist-plugin/contact-form-7":"5.2"
     },
     "require-dev":{
         "vlucas/phpdotenv":"^3.5"
     },
     "autoload": {
-        "psr-4": {"CAF\\": "src/"},
+        "psr-4": {"MCF7\\": "src/"},
         "files": [
-            "src/helpers.php"
+            "src/helpers.php",
+            "vendor/contact-form-7/wp-contact-form-7.php"
         ]
     },
     "extra": {

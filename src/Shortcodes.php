@@ -1,6 +1,6 @@
 <?php
-namespace CAF;
-use CAF\Config;
+namespace MCF7;
+use MCF7\Config;
 
 class Shortcodes
 {

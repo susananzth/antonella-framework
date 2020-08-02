@@ -2,8 +2,8 @@
 /**
 * No modify this file !!!
 */
-namespace CAF;
-use CAF\Config;
+namespace MCF7;
+use MCF7\Config;
 
 class Hooks
 {

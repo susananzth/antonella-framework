@@ -2,11 +2,11 @@
 /**
 * No modify this file !!!
 */
-namespace CAF;
+namespace MCF7;
 
 /*
 * Class Start
-* @package CAF\Start
+* @package MCF7\Start
 */
 class Start
 {

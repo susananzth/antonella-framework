@@ -1,9 +1,9 @@
 <?php
-namespace CAF;
+namespace MCF7;
 /*
-Plugin Name: Plugin de cambio de config Admin
+Plugin Name: Mi Contact Form 7 personalizado
 Plugin URI:
-Description: Un pugin para cambiar la configuración del administrador de WordPress.
+Description: Creando un plugin integrando el Contact Form 7
 Version: 1.6
 Author: Susana Piñero Rodríguez
 Author URI:
