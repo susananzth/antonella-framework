@@ -33,10 +33,14 @@
     },
     "autoload": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "psr-4": {"SU\\": "src/"},
 =======
         "psr-4": {"PPT\\": "src/"},
 >>>>>>> Cambiando namespace con php antonella namespace PPT
+=======
+        "psr-4": {"PPT\\": "src/"},
+>>>>>>> 45919e4231ece65d56f4b3e9652286899fba90ee
         "files": [
             "src/helpers.php"
         ]

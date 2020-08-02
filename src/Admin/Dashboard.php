@@ -1,5 +1,6 @@
 <?php 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace SU\Admin;
 
 use SU\Config;
@@ -8,6 +9,11 @@ namespace PPT\Admin;
 
 use PPT\Config;
 >>>>>>> Cambiando namespace con php antonella namespace PPT
+=======
+namespace PPT\Admin;
+
+use PPT\Config;
+>>>>>>> 45919e4231ece65d56f4b3e9652286899fba90ee
 
 class Dashboard
 {

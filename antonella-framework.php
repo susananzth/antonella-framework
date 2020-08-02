@@ -1,13 +1,19 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace SU;
 =======
 namespace PPT;
 >>>>>>> Cambiando namespace con php antonella namespace PPT
 /*
 Plugin Name: Mi-Pugin
+=======
+namespace PPT;
+/*
+Plugin Name: Plugin de post_type
+>>>>>>> 45919e4231ece65d56f4b3e9652286899fba90ee
 Plugin URI:
-Description:Another plugin developed on Antonella Framework for WP
+Description: Un plugin para agregar un post_type utilizando Antonella Framework.
 Version: 1.6
 Author: Susana Piñero Rodríguez
 Author URI:
