@@ -1,5 +1,5 @@
 <?php
-namespace PCF;
+namespace CAF;
 
 class Init
 {

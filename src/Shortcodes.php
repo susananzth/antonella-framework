@@ -1,6 +1,6 @@
 <?php
-namespace PCF;
-use PCF\Config;
+namespace CAF;
+use CAF\Config;
 
 class Shortcodes
 {

@@ -2,8 +2,8 @@
 /**
 * No modify this file !!!
 */
-namespace PCF;
-use PCF\Config;
+namespace CAF;
+use CAF\Config;
 
 class Request
 {

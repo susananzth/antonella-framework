@@ -1,6 +1,6 @@
 <?php
 
-namespace PCF\Admin;
+namespace CAF\Admin;
 use Jenssegers\Blade\Blade;
 
 class PageAdmin extends Admin

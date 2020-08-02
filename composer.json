@@ -32,7 +32,7 @@
         "vlucas/phpdotenv":"^3.5"
     },
     "autoload": {
-        "psr-4": {"PCF\\": "src/"},
+        "psr-4": {"CAF\\": "src/"},
         "files": [
             "src/helpers.php"
         ]

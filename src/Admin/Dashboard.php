@@ -1,7 +1,7 @@
 <?php 
-namespace PCF\Admin;
+namespace CAF\Admin;
 
-use PCF\Config;
+use CAF\Config;
 
 class Dashboard
 {

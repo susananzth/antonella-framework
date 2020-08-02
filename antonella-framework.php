@@ -1,11 +1,11 @@
 <?php
-namespace PCF;
+namespace CAF;
 /*
-Plugin Name: Plugin de Custom Fields
+Plugin Name: Plugin de cambio de config Admin
 Plugin URI:
-Description: Un plugin para tener campos predeterminados.
+Description: Un pugin para cambiar la configuración del administrador de WordPress.
 Version: 1.6
-Author: Susana Piñero Rodríduez
+Author: Susana Piñero Rodríguez
 Author URI:
 Framework: Antonella Framework for WP
 Framework URI: http://antonellaframework.com
