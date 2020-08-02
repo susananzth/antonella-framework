@@ -1,13 +1,13 @@
 <?php
-namespace SU;
-use SU\Config;
+namespace PCF;
+use PCF\Config;
 
 class Shortcodes
 {
 
     public function __construct()
     {
-        
+
     }
 
     public static function index()

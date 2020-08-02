@@ -1,7 +1,7 @@
 <?php
 
-namespace SU;
-use SU\Config;
+namespace PCF;
+use PCF\Config;
 class Install
 {
     /*
@@ -54,7 +54,7 @@ class Install
         {
              if($wpdb->get_var("SHOW TABLES LIKE '{$sql['table']}'") != $sql['table'])
              {
-                $query="CREATE TABLE IF NOT EXISTS {$sql['table']} ( {$sql['query']} ) ENGINE=InnoDB DEFAULT SUARSET=latin1 AUTO_INCREMENT=1 ;";
+                $query="CREATE TABLE IF NOT EXISTS {$sql['table']} ( {$sql['query']} ) ENGINE=InnoDB DEFAULT PCFARSET=latin1 AUTO_INCREMENT=1 ;";
                 $wpdb->query($sql['query']);
              }
         }

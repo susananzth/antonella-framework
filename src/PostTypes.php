@@ -1,6 +1,6 @@
 <?php
-namespace SU;
-use SU\Config;
+namespace PCF;
+use PCF\Config;
 class PostTypes
 {
   public static function index()
@@ -22,7 +22,7 @@ class PostTypes
         $post_type->add_taxonomy($tx);
       }
     }
-    
+
   }
   /**
   * Easy add new post_type and taxonomies
@@ -34,7 +34,7 @@ class PostTypes
     public function register_post_type($pt)
     {
         $config = new Config;
-        $img    = explode('.',$pt['image']);                
+        $img    = explode('.',$pt['image']);
         $image  = isset($img[1])&&strlen($img[1]<=4)?plugins_url('assets/img/'.$pt['image'], dirname(__FILE__)):$pt['image'];
         $translate              = $config->language_name;
         $singular               = $pt['singular'];
@@ -48,7 +48,7 @@ class PostTypes
 
         $labels['name']               = isset($pt['labels']['name'])?$pt['labels']['name']:_x( $plural, 'Post Type General Name', $translate );
         $labels['singular_name']      = isset($pt['labels']['singular_name'])?$pt['labels']['singular_name']:_x( $singular, 'Post Type Singular Name', $translate );
-        
+
         $labels['menu_name']          = isset($pt['labels']['menu_name'])?$pt['labels']['menu_name']:__( $singular, $translate );
         $labels['all_items']          = isset($pt['labels']['all_items'])?$pt['labels']['all_items']:__( $plural, $translate );
         $labels['view_item']          = isset($pt['labels']['view_item'])?$pt['labels']['view_item']:__( 'See '.$singular, $translate );
@@ -65,7 +65,7 @@ class PostTypes
         $rewrite['whit_front']        = isset($pt['rewrite']['whitfront'])?$pt['rewrite']['whitfront']:true;
         $rewrite['pages']             = isset($pt['rewrite']['pages'])?$pt['rewrite']['pages']:true;
         $rewrite['feeds']             = isset($pt['rewrite']['feeds'])?$pt['rewrite']['feeds']:false;
-        
+
         $args['label']                  = isset($pt['args']['label'])?$pt['args']['label']:__( $plural, $translate );
         $args['labels']                 = $labels;
         $args['description']            = isset($pt['args']['description'])?__($pt['args']['description'],$translate):__( 'Info about '.$singular, $translate );
@@ -96,8 +96,8 @@ class PostTypes
         {
           foreach($taxonomy as $tx){
               register_taxonomy( $tx, [$slug], [
-                "label"=>__($tx, $translate), 
-                "show_in_rest"      => true, 
+                "label"=>__($tx, $translate),
+                "show_in_rest"      => true,
                 "show_ui"           => true,
                 "show_admin_column" => true,
                 "query_var"         => true
@@ -122,7 +122,7 @@ class PostTypes
       $post_type    = $tx['post_type'];
       $singular     = $tx['singular'];
       $plural       = $tx['plural'];
-      $slug         = $tx['slug'];  
+      $slug         = $tx['slug'];
       $pt           = $tx['post_type'];
       $translate    = $config->language_name;
 
@@ -160,7 +160,7 @@ class PostTypes
       $args['rewrite']                = isset($tx['args']['rewrite'])?$tx['args']['rewrite']:(isset($tx['rewrite'])?$tx['rewrite']:['slug' => $slug ]);
       $args['description']            = isset($tx['args']['description'])?$tx['args']['description']:"";
       $args['query_var']              = $slug;
-      
+
 
       $rewrite['slug']          = $slug;
       $rewrite['with_front']    = isset($tx['args']['rewrite']['with_front'])?$tx['args']['rewrite']['with_front']:(isset($tx['rewrite']['with_front'])?$tx['rewrite']['with_front']:true);

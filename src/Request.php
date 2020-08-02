@@ -2,8 +2,8 @@
 /**
 * No modify this file !!!
 */
-namespace SU;
-use SU\Config;
+namespace PCF;
+use PCF\Config;
 
 class Request
 {

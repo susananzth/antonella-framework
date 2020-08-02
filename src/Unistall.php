@@ -1,5 +1,5 @@
 <?php
-namespace SU;
+namespace PCF;
 
 class Unistall
 {

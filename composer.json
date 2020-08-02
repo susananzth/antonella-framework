@@ -26,13 +26,13 @@
     ],
     "license": "MIT",
     "require": {
-        "nesbot/carbon": "^2.37"
+      "cmb2/cmb2": "dev-master"
     },
     "require-dev":{
         "vlucas/phpdotenv":"^3.5"
     },
     "autoload": {
-        "psr-4": {"SU\\": "src/"},
+        "psr-4": {"PCF\\": "src/"},
         "files": [
             "src/helpers.php"
         ]

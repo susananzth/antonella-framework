@@ -1,7 +1,7 @@
 <?php
-namespace SU\Admin;
+namespace PCF\Admin;
 
-use SU\Config;
+use PCF\Config;
 
 class Admin
 {

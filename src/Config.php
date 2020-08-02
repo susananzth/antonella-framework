@@ -1,6 +1,6 @@
 <?php
 
-namespace SU;
+namespace PCF;
 
 class Config
 {
@@ -26,35 +26,39 @@ class Config
     /**
     * POST data process
     * get the post data and execute the function
-    * @example ['post_data'=>'SU::function']
+    * @example ['post_data'=>'PCF::function']
     */
     public $post=[];
     /**
     * GET data process
     * get the get data and execute the function
-    * @example ['get_data'=>'SU::function']
+    * @example ['get_data'=>'PCF::function']
     */
     public $get=[];
     /**
     * add_filter data functions
     * @input array
-    * @example ['body_class','SU::function',10,2]
-    * @example ['body_class',['SU','function'],10,2]
+    * @example ['body_class','PCF::function',10,2]
+    * @example ['body_class',['PCF','function'],10,2]
     */
     public $add_filter=[];
     /**
     * add_action data functions
     * @input array
-    * @example ['body_class','SU::function',10,2]
-    * @example ['body_class',['SU','function'],10,2]
+    * @example ['body_class','PCF::function',10,2]
+    * @example ['body_class',['PCF','function'],10,2]
     */
-    public $add_action=[];
+    public $add_action=[
+      ['cmb2_admin_init', __NAMESPACE__.'\AutosController::cmb2_sample_metaboxes']
+    ];
     /**
     * add custom shortcodes
     * @input array
-    * @example [['example','SU\ExampleController::example_shortcode']]
+    * @example [['example','PCF\ExampleController::example_shortcode']]
     */
-    public $shortcodes=[];
+    public $shortcodes=[
+        ['example','PCF\ExampleController::example_shortcode']
+    ];
     /**
     * Dashboard
 
@@ -158,11 +162,11 @@ class Config
 
     public $post_types =[
         [
-            "singular"      => "",
-            "plural"        => "",
-            "slug"          => "",
-            "position"      => 12,
-            "taxonomy"      => [], //['category','category2','category3'],
+            "singular"      => "Automóvil",
+            "plural"        => "Automóviles",
+            "slug"          => "automovil",
+            "position"      => 4,
+            "taxonomy"      => ['Categoría'], //['category','category2','category3'],
             "image"         => "antonella-icon.png",
             "gutemberg"     => true,
             //advanced

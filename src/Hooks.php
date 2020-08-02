@@ -2,8 +2,8 @@
 /**
 * No modify this file !!!
 */
-namespace SU;
-use SU\Config;
+namespace PCF;
+use PCF\Config;
 
 class Hooks
 {
@@ -67,7 +67,7 @@ class Hooks
         // DASHBOARD
          add_action( 'wp_dashboard_setup',  array(__NAMESPACE__.'\Admin\Dashboard','index') );
         // add_action( 'admin_enqueue_scripts', array(__NAMESPACE__.'\Admin\Dashboard','scripts') );
-        
+
         if($action)
         {
            foreach($action as $data)

@@ -1,7 +1,7 @@
 <?php 
-namespace SU\Admin;
+namespace PCF\Admin;
 
-use SU\Config;
+use PCF\Config;
 
 class Dashboard
 {
@@ -29,7 +29,7 @@ class Dashboard
 
     public function scripts($hook)
     {
-        
+
         if( 'index.php' != $hook ) {
             return;
         }
@@ -38,6 +38,6 @@ class Dashboard
         {
              wp_enqueue_style( 'dashboard-widget-styles', plugins_url( '', __FILE__ ) . $data );
         }
-	   
+
     }
 }

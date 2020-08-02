@@ -1,6 +1,6 @@
 <?php
-namespace SU;
-use SU\Config;
+namespace PCF;
+use PCF\Config;
 
 class Language
 {
