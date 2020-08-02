@@ -41,7 +41,9 @@ class Config
     * @example ['body_class','MCF7::function',10,2]
     * @example ['body_class',['MCF7','function'],10,2]
     */
-    public $add_filter=[];
+    public $add_filter=[
+      ['manage_contacto_posts_columns',[__NAMESPACE__.'\ContactController', 'TablaColumnas'], 10, 2],
+    ];
     /**
     * add_action data functions
     * @input array
@@ -50,6 +52,7 @@ class Config
     */
     public $add_action=[
       ['wpcf7_before_send_mail',__NAMESPACE__.'\ContactController::guardar'],
+      ['manage_contacto_posts_custom_column', [__NAMESPACE__.'\ContactController', 'TablaColumnasContenido'],10,2],
     ];
     /**
     * add custom shortcodes
