@@ -27,13 +27,13 @@
         }
         function TablaColumnas($defaults)
         {
-          unset($defaults['category']);
-          unset($defaults['date']);
+          unset($defaults['taxonomy-categoría']);
+          unset($defaults['comments']);
 
           //Agregando nuestras columnas
           $defaults['nombre']   = "Nombre";
           $defaults['email']    = "Correo";
-          $defaults['date']     = "Fecha";
+          return $defaults;
         }
         function TablaColumnasContenido($column_name, $post_id)
         {
