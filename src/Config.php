@@ -12,9 +12,7 @@ class Config
     * @example ["example_data" => 'foo',]
     * @return void
     */
-    public $plugin_options=[
-      'cambiar_fuente'=>'no',
-    ];
+    public $plugin_options=[];
     /**
     * Language Option
     * define a unique word for translate call
@@ -30,9 +28,7 @@ class Config
     * get the post data and execute the function
     * @example ['post_data'=>'MCF7::function']
     */
-    public $post=[
-      'cambiar_fuente'=>__NAMESPACE__.'\AdminController::guardar',
-    ];
+    public $post=[];
     /**
     * GET data process
     * get the get data and execute the function
@@ -90,13 +86,6 @@ class Config
     * list capability -> https://wordpress.org/support/article/roles-and-capabilities/
     */
     public $plugin_menu=[
-      [
-        "path"      => ["page"],
-        "name"      => "Cambiar Fuente",
-        "function"  => __NAMESPACE__."\AdminController::index",
-        "icon"      => "antonella-icon.png",
-        "slug"      => "my-custom-page",
-      ]
     /*
         [
             "path"      => ["page"],

@@ -26,7 +26,6 @@ defined( 'ABSPATH' ) or die( __('Lo siento por aqui no puedes pasar :)') );
 */
 define('NELLA_URL',__FILE__);
 $loader = require __DIR__ . '/vendor/autoload.php';
-$cmb2 = require_once __DIR__ . '/vendor/cmb2/cmb2/init.php';
 $antonella= new Start;
 
 
