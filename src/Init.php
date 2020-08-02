@@ -1,5 +1,6 @@
 <?php
-namespace PPT;
+namespace MCF7;
+
 class Init
 {
     public function __construct()

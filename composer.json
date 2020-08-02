@@ -26,23 +26,16 @@
     ],
     "license": "MIT",
     "require": {
-        "nesbot/carbon": "^2.37"
+      "wpackagist-plugin/contact-form-7":"5.2"
     },
     "require-dev":{
         "vlucas/phpdotenv":"^3.5"
     },
     "autoload": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "psr-4": {"SU\\": "src/"},
-=======
-        "psr-4": {"PPT\\": "src/"},
->>>>>>> Cambiando namespace con php antonella namespace PPT
-=======
-        "psr-4": {"PPT\\": "src/"},
->>>>>>> 45919e4231ece65d56f4b3e9652286899fba90ee
+        "psr-4": {"MCF7\\": "src/"},
         "files": [
-            "src/helpers.php"
+            "src/helpers.php",
+            "vendor/contact-form-7/wp-contact-form-7.php"
         ]
     },
     "extra": {

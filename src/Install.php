@@ -1,6 +1,7 @@
 <?php
-namespace PPT;
-use PPT\Config;
+
+namespace MCF7;
+use MCF7\Config;
 class Install
 {
     /*
@@ -53,15 +54,7 @@ class Install
         {
              if($wpdb->get_var("SHOW TABLES LIKE '{$sql['table']}'") != $sql['table'])
              {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                $query="CREATE TABLE IF NOT EXISTS {$sql['table']} ( {$sql['query']} ) ENGINE=InnoDB DEFAULT SUARSET=latin1 AUTO_INCREMENT=1 ;";
-=======
-                $query="CREATE TABLE IF NOT EXISTS {$sql['table']} ( {$sql['query']} ) ENGINE=InnoDB DEFAULT PPTARSET=latin1 AUTO_INCREMENT=1 ;";
->>>>>>> Cambiando namespace con php antonella namespace PPT
-=======
-                $query="CREATE TABLE IF NOT EXISTS {$sql['table']} ( {$sql['query']} ) ENGINE=InnoDB DEFAULT PPTARSET=latin1 AUTO_INCREMENT=1 ;";
->>>>>>> 45919e4231ece65d56f4b3e9652286899fba90ee
+                $query="CREATE TABLE IF NOT EXISTS {$sql['table']} ( {$sql['query']} ) ENGINE=InnoDB DEFAULT MCF7ARSET=latin1 AUTO_INCREMENT=1 ;";
                 $wpdb->query($sql['query']);
              }
         }

@@ -1,9 +1,9 @@
 <?php
-namespace PPT;
+namespace MCF7;
 /*
-Plugin Name: Plugin de post_type
+Plugin Name: Mi Contact Form 7 personalizado
 Plugin URI:
-Description: Un plugin para agregar un post_type utilizando Antonella Framework.
+Description: Creando un plugin integrando el Contact Form 7
 Version: 1.6
 Author: Susana Piñero Rodríguez
 Author URI:
@@ -26,6 +26,7 @@ defined( 'ABSPATH' ) or die( __('Lo siento por aqui no puedes pasar :)') );
 */
 define('NELLA_URL',__FILE__);
 $loader = require __DIR__ . '/vendor/autoload.php';
+$cmb2 = require_once __DIR__ . '/vendor/cmb2/cmb2/init.php';
 $antonella= new Start;
 
 

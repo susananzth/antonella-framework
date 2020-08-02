@@ -1,5 +1,5 @@
 <?php
-namespace PPT;
+namespace MCF7;
 
 class Users
 {

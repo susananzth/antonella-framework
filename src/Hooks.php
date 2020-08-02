@@ -2,8 +2,9 @@
 /**
 * No modify this file !!!
 */
-namespace PPT;
-use PPT\Config;
+namespace MCF7;
+use MCF7\Config;
+
 class Hooks
 {
     public function __construct()

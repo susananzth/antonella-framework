@@ -1,7 +1,7 @@
-<?php
-namespace PPT\Admin;
+<?php 
+namespace MCF7\Admin;
 
-use PPT\Config;
+use MCF7\Config;
 
 class Dashboard
 {

@@ -1,8 +1,6 @@
 <?php
-
-namespace PPT;
-
-use PPT\Config;
+namespace MCF7;
+use MCF7\Config;
 
 class Shortcodes
 {

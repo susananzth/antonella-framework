@@ -2,10 +2,11 @@
 /**
 * No modify this file !!!
 */
-namespace PPT;
+namespace MCF7;
+
 /*
 * Class Start
-* @package PPT\Start
+* @package MCF7\Start
 */
 class Start
 {

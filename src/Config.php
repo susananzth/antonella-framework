@@ -1,6 +1,6 @@
 <?php
 
-namespace PPT;
+namespace MCF7;
 
 class Config
 {
@@ -12,7 +12,9 @@ class Config
     * @example ["example_data" => 'foo',]
     * @return void
     */
-    public $plugin_options=[];
+    public $plugin_options=[
+      'cambiar_fuente'=>'no',
+    ];
     /**
     * Language Option
     * define a unique word for translate call
@@ -26,36 +28,40 @@ class Config
     /**
     * POST data process
     * get the post data and execute the function
-    * @example ['post_data'=>'PPT::function']
+    * @example ['post_data'=>'MCF7::function']
     */
-    public $post=[];
+    public $post=[
+      'cambiar_fuente'=>__NAMESPACE__.'\AdminController::guardar',
+    ];
     /**
     * GET data process
     * get the get data and execute the function
-    * @example ['get_data'=>'PPT::function']
+    * @example ['get_data'=>'MCF7::function']
     */
     public $get=[];
     /**
     * add_filter data functions
     * @input array
-    * @example ['body_class','PPT::function',10,2]
-    * @example ['body_class',['PPT','function'],10,2]
+    * @example ['body_class','MCF7::function',10,2]
+    * @example ['body_class',['MCF7','function'],10,2]
     */
     public $add_filter=[];
     /**
     * add_action data functions
     * @input array
-    * @example ['body_class','PPT::function',10,2]
-    * @example ['body_class',['PPT','function'],10,2]
+    * @example ['body_class','MCF7::function',10,2]
+    * @example ['body_class',['MCF7','function'],10,2]
     */
-    public $add_action=[];
+    public $add_action=[
+      ['wpcf7_before_send_mail',__NAMESPACE__.'\ContactController::guardar'],
+    ];
     /**
     * add custom shortcodes
     * @input array
-    * @example [['example','PPT\ExampleController::example_shortcode']]
+    * @example [['example','MCF7\ExampleController::example_shortcode']]
     */
     public $shortcodes=[
-        ['example','PPT\ExampleController::example_shortcode']
+        ['example','MCF7\ExampleController::example_shortcode']
     ];
     /**
     * Dashboard
@@ -84,6 +90,13 @@ class Config
     * list capability -> https://wordpress.org/support/article/roles-and-capabilities/
     */
     public $plugin_menu=[
+      [
+        "path"      => ["page"],
+        "name"      => "Cambiar Fuente",
+        "function"  => __NAMESPACE__."\AdminController::index",
+        "icon"      => "antonella-icon.png",
+        "slug"      => "my-custom-page",
+      ]
     /*
         [
             "path"      => ["page"],
@@ -160,11 +173,11 @@ class Config
 
     public $post_types =[
         [
-            "singular"      => "Automóvil",
-            "plural"        => "Automóviles",
-            "slug"          => "automovil",
+            "singular"      => "Contacto",
+            "plural"        => "Contactos",
+            "slug"          => "contacto",
             "position"      => 4,
-            "taxonomy"      => ['Categoría'], //['category','category2','category3'],
+            "taxonomy"      => ['categoría'], //['category','category2','category3'],
             "image"         => "antonella-icon.png",
             "gutemberg"     => true,
             //advanced
