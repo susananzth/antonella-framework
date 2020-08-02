@@ -2,19 +2,8 @@
 /**
 * No modify this file !!!
 */
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace SU;
-use SU\Config;
-=======
 namespace PPT;
 use PPT\Config;
->>>>>>> Cambiando namespace con php antonella namespace PPT
-=======
-namespace PPT;
-use PPT\Config;
->>>>>>> 45919e4231ece65d56f4b3e9652286899fba90ee
-
 class Hooks
 {
     public function __construct()
@@ -77,7 +66,7 @@ class Hooks
         // DASHBOARD
          add_action( 'wp_dashboard_setup',  array(__NAMESPACE__.'\Admin\Dashboard','index') );
         // add_action( 'admin_enqueue_scripts', array(__NAMESPACE__.'\Admin\Dashboard','scripts') );
-        
+
         if($action)
         {
            foreach($action as $data)

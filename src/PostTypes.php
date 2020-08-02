@@ -1,7 +1,6 @@
 <?php
 namespace PPT;
 use PPT\Config;
-
 class PostTypes
 {
   public static function index()
